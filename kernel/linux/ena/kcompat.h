@@ -127,10 +127,8 @@ Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 #define UBUNTU_VERSION_CODE 0
 #else
 
-#if UTS_UBUNTU_RELEASE_ABI > 255
 #undef UTS_UBUNTU_RELEASE_ABI
 #define UTS_UBUNTU_RELEASE_ABI 0
-#endif /* UTS_UBUNTU_RELEASE_ABI > 255 */
 
 /* Ubuntu does not provide actual release version macro, so we use the kernel
  * version plus the ABI to generate a unique version code specific to Ubuntu.
